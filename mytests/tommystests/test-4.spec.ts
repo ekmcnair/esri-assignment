@@ -8,5 +8,5 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Search' }).click();
   await page.getByLabel('Franklin').click();
   await page.getByRole('link', { name: 'Franklin Location 1221 E.' }).click();
-  await expect(page.getByRole('heading', { name: 'Hours' })).toBeVisible();});
-  
+  await expect(page.getByRole('heading', { name: 'Hours' })).toBeVisible();
+});
