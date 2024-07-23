@@ -6,7 +6,7 @@ test('test', async ({ page }) => {
   await page.getByLabel('I would like to receive promotional messages.').check();
   await page.getByLabel('I would like to receive informational messages about weather conditions and').check();
   await page.locator('#ntfc_sms_phone').click();
-  await page.locator('#ntfc_sms_phone').fill('3176567009');
+  await page.locator('#ntfc_sms_phone').fill('3173312618');
   await page.getByRole('button', { name: 'Try Tommy\'s Express' }).click();
   await expect(page.locator('#ntfc_sms_complete_form_area')).toContainText('Thanks for opting in');
 });
